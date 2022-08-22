@@ -13,7 +13,7 @@ app.use((req,res,next)=>{
 })
 
 
-app.use("/api/workouts",workoutRoutes);
+app.use("/api/workouts", workoutRoutes);
 
 mongoose.connect(process.env.MONG_URI)
 .then(()=>{
@@ -24,4 +24,6 @@ mongoose.connect(process.env.MONG_URI)
 .catch((error)=>{
     console.log(error);
 })
+
+
 
